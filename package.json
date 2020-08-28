@@ -1,0 +1,30 @@
+{
+  "name": "replication",
+  "version": "1.0.0",
+  "description": "Cria uma replica de um bucket em outro bucket fictício",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint src/**/*.js --ignore-pattern node_modules/",
+    "dev": "node -r dotenv/config src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenio-cunha/replication.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugenio-cunha/replication/issues"
+  },
+  "homepage": "https://github.com/eugenio-cunha/replication#readme",
+  "dependencies": {
+    "aws-sdk": "^2.741.0",
+    "cron": "^1.8.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.1.0"
+  }
+}
